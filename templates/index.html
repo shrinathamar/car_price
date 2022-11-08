@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Car Price Prediction</title>
+  </head>
+
+  <body>
+
+    <hr size="10" color="skyblue">
+    <center>
+      <img src="../static/car.png" alt="carImage" height="80", width="180">
+      <h1 color="blue">Get Correct Price Of Your Car</h1>
+      <h3><em>New Thinking New Possibilies !</em></h3>
+      <hr size="5" color="skyblue">
+    <center>
+
+    <form action="/predict" method ="POST">
+
+        <br>
+        <br><br><br><br>
+
+        <label>Year       :<br></label><input type="text" name ="year"><br><br>
+        <label>KMS Driven :<br></label><input type="text" name ="km_driven"><br><br>
+        <label>Mileage    :<br></label><input type="text" name ="mileage"><br><br>
+        <label>Engine CC  :<br></label><input type="text" name ="engine"><br><br>
+        <label>Max Power  :<br></label><input type="text" name ="max_power"><br><br>
+        <label>Torue      :<br></label><input type="text" name ="torque"><br><br>
+        <label>Seats      :<br></label><input type="text" name ="seats"><br><br>
+
+        <h4>Transmision</h4>
+        <input type="radio"  name="transmission" value="Automatic"/>
+        <label for="radio-bhk-1">Automatic</label>
+        <input type="radio"  name="transmission" value="Manual"/>
+        <label for="radio-bhk-2">Manual</label> <br>
+
+        <h4>Seller Type</h4>
+        <input type="radio"  name="seller" value="Dealer"/>
+        <label for="radio-bhk-1">Dealer</label>
+        <input type="radio"  name="seller" value="Individual"/>
+        <label for="radio-bhk-2">Individual</label>
+        <input type="radio"  name="seller" value="Trustmark Dealer"/>
+        <label for="radio-bhk-2">Trustmark Dealer</label> <br>
+
+        <h4>Fuel Type</h4>
+        <input type="radio"  name="fuel" value="CNG"/>
+        <label for="radio-bhk-1">CNG </label>
+        <input type="radio"  name="fuel" value="LPG"/>
+        <label for="radio-bhk-2">LPG</label>
+        <input type="radio"  name="fuel" value="Petrol"/>
+        <label for="radio-bhk-2">Petrol</label>
+        <input type="radio"  name="fuel" value="Diesel"/>
+        <label for="radio-bhk-2">Diesel</label><br>
+
+        <h4>Car Owner</h4>
+        <input type="radio"  name="owner" value="First"/>
+        <label for="radio-bhk-1">First</label>
+        <input type="radio"  name="owner" value="Second"/>
+        <label for="radio-bhk-2">Second</label>
+        <input type="radio"  name="owner" value="Third"/>
+        <label for="radio-bhk-2">Third</label>
+        <input type="radio"  name="owner" value="Fourth"/>
+        <label for="radio-bhk-2">Fourth</label>
+        <input type="radio"  name="owner" value="Showroom"/>
+        <label for="radio-bhk-2">Showroom</label> <br>
+
+        <br><br>
+        <select name="brand">
+          <option value=""  selected="selected">Choose a Brand</option>
+          <option>Ambassador</option>
+          <option>Audi</option>
+          <option>BMW</option>
+          <option>Chevrolet</option>
+          <option>Fiat</option>
+          <option>Force</option>
+          <option>Honda</option>
+          <option>Hyundai</option>
+          <option>Isuzu</option>
+          <option>Kia</option>
+          <option>Mahindra</option>
+          <option>Mercedes</option>
+          <option>Mercedes</option>
+          <option>Mitsubishi</option>
+          <option>Nissan</option>
+          <option>Renault</option>
+          <option>Tata</option>
+          <option>Toyota</option>
+          <option>Volkswagen</option>
+          <option>Volvo</option>
+          <option>Skoda</option>
+          <option>Maruti</option>
+        </select><br>
+        <br>
+        <br>
+
+        <input type="submit">
+        <br><br>
+
+
+    </form>
+
+
+
+
+  </body>
+</html>
